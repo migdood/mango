@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #FFF6ED;
+}
+/*HEADER*/
+header{
+    width: 100%;
+    height: 90px;  
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+header nav{
+    font-family: 'Roboto', sans-serif;
+    width: 1750px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+ul{
+    display: flex;
+    gap: 30px;  
+    overflow: hidden ;
+}
+nav .header-logo{
+    align-self: center;  
+}
+
+a{
+    font-size: 35px;  
+    color: #48654F;
+}
+nav button{
+    background-color: transparent;
+    border: 0;
+}
+nav ul li #home{
+    animation: homepopup 0.5s ease;
+}
+@keyframes homepopup{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-0%);
+    }
+}
+nav ul li #about{
+    animation: about 0.7s ease;
+}
+@keyframes about{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-0%);
+    }
+}
+nav ul li #projects{
+    animation: proj 0.9s ease;
+}
+@keyframes proj{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-0%);
+    }
+}
+nav ul li::after{
+    content: '';
+    height: 2px;
+    background: #48654F;
+    display: block;
+    width: 0%;
+    margin-right: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after {
+    width: 100%;
+}
+/*HEADER END*/
+/*HERO*/
+.hero-container{
+    width: 100%;
+    height: 700px;
+    background-color: #FFF6ED;
+    overflow: hidden;
+}
+.hero{
+    width: 1750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.herotext-container{
+    flex-direction: column;
+    margin-left: 60px;
+}
+.name-container{
+    margin-left: 130px;
+    overflow: hidden;
+}
+.herotext-container h1, p{
+    color: #48654F;
+    text-align: right;
+    font-size: 250px;
+    animation: namepopup 1s 0s ease forwards;
+}
+@keyframes namepopup {
+    0%{
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        transfrom: translateY(0%);
+    }
+}
+.herotext-container p{
+    font-size: 25px;
+    text-align: right;
+}
+.hero .color-block{
+    background-color: #EFF483;
+    height: 620px;
+    width: 1100px;
+    margin-left: auto;
+}
+.hero-container::after{
+    content: '';
+    height: 2px;
+    background: #48654F;
+    display: block;
+    margin: 60px auto 0;
+    width: 70%;
+}
+/*HERO END*/
+/*FOOTER*/
+
+/*FOOTER END*/
